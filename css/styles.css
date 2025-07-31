@@ -1,116 +1,17 @@
-/* Base general */
+/* Base general - Estilo principal de la rama main */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
   color: #f5f5f5;
   margin: 0;
   padding: 0;
-/* Reset y estilos base */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  color: #333;
 }
 
-/* Estilos personalizados para la navbar Bootstrap */
-.navbar-brand:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* Estilos específicos para nav-links con mayor especificidad */
-.navbar-nav .nav-link {
-  background-color: #ffffff;
-  color: #1e3c72;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: #f8f9fa;
-  color: #1e3c72;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.navbar-nav .nav-link.active-page {
-  background-color: #ffffff;
-  color: #1e3c72;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-nav .nav-link.active-page:hover {
-  background-color: #f8f9fa;
-  color: #1e3c72;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-  border: none;
-}
-
-/* Mejora del header title */
-.bg-primary h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.bg-primary p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos específicos para páginas */
-#home-content {
-  padding: 50px;
-}
-
-#titulo {
-  display: flex;
-  flex-direction: row;
-}
-
-#icono {
-  width: 80px;
-  height: 80px;
-}
-
-/* Contenido general - páginas internas */
-.contenido {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.texto {
-  flex: 1;
-}
-
-/* Navbar */
+/* Navbar principal */
 .navbar {
   background-color: #1c1c1c;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-  padding: 1rem; 
-.contenido-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-}
-
-.contenido-1 > div {
-  flex: 1;
-}
-
-.texto-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  padding: 1rem;
 }
 
 .navbar .title h1,
@@ -139,53 +40,20 @@ body {
 .navbar ul li a.active,
 .navbar ul li a:hover {
   color: #007B8A;
-/* Imágenes */
-.jimi, .kurt, .amp {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.amplificadores {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* Layout principal */
-main {
-  background-color: #f8f9fa;
-  min-height: calc(100vh - 200px);
-}
-
-h2 {
-  color: #1e3c72;
 }
 
 /* Contenido principal */
 main.container {
-
   background-color: #1e1e1e;
   padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 0 15px #007B8A;
-/* Página de contacto - Tarjetas de Bootstrap (ya no se usan las clases personalizadas) */
-.info-contacto p {
-  margin: 0.5rem 0;
-}
-
-/* Formularios */
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
 }
 
 h1, h2, h3 {
   color: #007B8A;
   font-weight: bold;
 }
-
 
 /* Artículos */
 article.row {
@@ -215,7 +83,7 @@ article li {
 }
 
 .btn-primary:hover {
-  background-color: #007B8A;
+  background-color: #005f6b;
 }
 
 /* Sección de homenaje a Ozzy */
@@ -237,64 +105,22 @@ article li {
 }
 
 /* Footer */
-input, textarea {
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-button {
-  margin-top: 1.5rem;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 4px;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #1a3366 0%, #235288 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
-}
-
-/* Footer */
 footer {
   background-color: #111;
   color: #aaa;
   padding: 2rem;
   border-top: 2px solid #007B8A;
-  background-color: #111;
-  color: #ddd;
-  text-align: center;
-  padding: 30px 20px;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
-  border-top: 2px solid #444;
 }
 
 footer p,
-
-footer p {
-  margin: 10px 0;
-}
-
 footer strong {
   color: #ddd;
 }
 
-
 footer a {
   color: #007B8A;
-  color: #1db954;
   text-decoration: none;
 }
-
 
 footer a:hover {
   color: #fff;
@@ -311,6 +137,57 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+
+/* Estilos específicos para páginas internas */
+#home-content {
+  padding: 50px;
+}
+
+#titulo {
+  display: flex;
+  flex-direction: row;
+}
+
+#icono {
+  width: 80px;
+  height: 80px;
+}
+
+.contenido {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.contenido-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contenido-1 > div {
+  flex: 1;
+}
+
+.texto-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Responsive */
@@ -333,21 +210,106 @@ footer a:hover {
   }
 }
 
+/* Estilos específicos para página de contacto */
+.contacto-page {
+  background-color: #121212;
+  color: #f5f5f5;
+}
 
-.container-wide {
-  max-width: 1400px;
-  margin: 0 auto;
+.contacto-page .navbar {
+  background-color: #1c1c1c;
+}
+
+.contacto-page .navbar-nav .nav-link {
+  background-color: transparent;
+  color: #e0e0e0;
+  border: 2px solid #007B8A;
+  border-radius: 25px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.contacto-page .navbar-nav .nav-link:hover {
+  background-color: #007B8A;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.contacto-page .navbar-nav .nav-link.active {
+  background-color: #007B8A;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 123, 138, 0.3);
+}
+
+.contacto-page main {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #007B8A;
+}
+
+.contacto-page h1, 
+.contacto-page h2, 
+.contacto-page h3 {
+  color: #007B8A;
+}
+
+.contacto-page .card {
+  background-color: #2c2c2c;
+  border: 1px solid #007B8A;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contacto-page .card-body {
+  color: #e0e0e0;
+}
+
+.contacto-page .form-control {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #f5f5f5;
+}
+
+.contacto-page .form-control:focus {
+  background-color: #444;
+  border-color: #007B8A;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 138, 0.25);
+  color: #f5f5f5;
+}
+
+.contacto-page .btn-primary {
+  background-color: #007B8A;
+  border-color: #007B8A;
+}
+
+.contacto-page .btn-primary:hover {
+  background-color: #005f6b;
+  border-color: #005f6b;
+}
+
+.contacto-page .btn-success {
+  background-color: #007B8A;
+  border-color: #007B8A;
+}
+
+.contacto-page .btn-success:hover {
+  background-color: #005f6b;
+  border-color: #005f6b;
 }
 
 /* Estilos para alertas personalizadas */
 .custom-success-alert {
-  border-left: 4px solid #28a745;
+  border-left: 4px solid #007B8A;
   border-radius: 8px;
   animation: slideInRight 0.3s ease-out;
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border-color: #007B8A;
 }
 
 .custom-success-alert .btn-close {
   font-size: 0.8rem;
+  filter: invert(1);
 }
 
 @keyframes slideInRight {
@@ -362,15 +324,22 @@ footer a:hover {
 }
 
 /* Mejora de validación de formularios */
-.form-control.is-valid,
-.form-control.is-invalid {
-  padding-right: calc(1.5em + 0.75rem);
-  background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+.contacto-page .form-control.is-valid {
+  border-color: #007B8A;
+  background-color: #333;
+  color: #f5f5f5;
 }
 
-.form-control:focus {
-  border-color: #1e3c72;
-  box-shadow: 0 0 0 0.2rem rgba(30, 60, 114, 0.25);
+.contacto-page .form-control.is-invalid {
+  border-color: #dc3545;
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.contacto-page .invalid-feedback {
+  color: #dc3545;
+}
+
+.contacto-page .valid-feedback {
+  color: #007B8A;
 }
