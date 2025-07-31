@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* Navbar principal */
+/* Navbar principal - Aplicado a todas las páginas */
 .navbar {
   background-color: #1c1c1c;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
@@ -22,24 +22,83 @@ body {
   margin: 0;
 }
 
+/* Estilos de navegación aplicados globalmente */
+.navbar-nav .nav-link {
+  background-color: transparent;
+  color: #e0e0e0 !important;
+  border: 2px solid #007B8A;
+  border-radius: 25px;
+  padding: 8px 16px !important;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #007B8A !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 138, 0.4);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #007B8A !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 123, 138, 0.3);
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #e0e0e0;
-  transition: color 0.3s ease;
+/* Navbar toggler styles */
+.navbar-toggler {
+  border: 2px solid #007B8A;
+  padding: 4px 8px;
 }
 
-.navbar ul li a.active,
-.navbar ul li a:hover {
-  color: #007B8A;
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 138, 0.25);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23007B8A' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Efectos adicionales para iconos en navbar */
+.navbar-nav .nav-link i {
+  transition: transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover i {
+  transform: scale(1.1);
+}
+
+/* Mejora del logo */
+.navbar img {
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.05);
+}
+
+/* Efecto de glow en el título */
+.navbar h1 {
+  text-shadow: 0 0 10px rgba(0, 123, 138, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
+.navbar h1:hover {
+  text-shadow: 0 0 20px rgba(0, 123, 138, 0.6);
 }
 
 /* Contenido principal */
@@ -197,6 +256,20 @@ footer a:hover {
     align-items: center;
   }
 
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
   .contenido-1 {
     flex-direction: column;
   }
@@ -214,32 +287,6 @@ footer a:hover {
 .contacto-page {
   background-color: #121212;
   color: #f5f5f5;
-}
-
-.contacto-page .navbar {
-  background-color: #1c1c1c;
-}
-
-.contacto-page .navbar-nav .nav-link {
-  background-color: transparent;
-  color: #e0e0e0;
-  border: 2px solid #007B8A;
-  border-radius: 25px;
-  padding: 8px 16px;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
-.contacto-page .navbar-nav .nav-link:hover {
-  background-color: #007B8A;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
-
-.contacto-page .navbar-nav .nav-link.active {
-  background-color: #007B8A;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 123, 138, 0.3);
 }
 
 .contacto-page main {
@@ -267,14 +314,28 @@ footer a:hover {
 .contacto-page .form-control {
   background-color: #333;
   border: 1px solid #555;
-  color: #f5f5f5;
+  color: #f5f5f5 !important;
 }
 
 .contacto-page .form-control:focus {
   background-color: #444;
   border-color: #007B8A;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 138, 0.25);
-  color: #f5f5f5;
+  color: #ffffff !important;
+}
+
+.contacto-page .form-control::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1;
+}
+
+.contacto-page .form-label {
+  color: #f5f5f5 !important;
+  font-weight: bold;
+}
+
+.contacto-page .form-label i {
+  color: #007B8A !important;
 }
 
 .contacto-page .btn-primary {
@@ -295,6 +356,160 @@ footer a:hover {
 .contacto-page .btn-success:hover {
   background-color: #005f6b;
   border-color: #005f6b;
+}
+
+/* Asegurar colores correctos en todas las páginas */
+body, html {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Cards con tema oscuro consistente */
+.card {
+  background-color: #2c2c2c !important;
+  border: 1px solid #007B8A !important;
+  color: #e0e0e0 !important;
+}
+
+.card-body {
+  color: #e0e0e0 !important;
+}
+
+.card-body p {
+  color: #f0f0f0 !important;
+}
+
+.card-title {
+  color: #007B8A !important;
+}
+
+.card-text {
+  color: #e8e8e8 !important;
+}
+
+/* Texto de párrafos y elementos */
+p, span, div {
+  color: #e0e0e0 !important;
+}
+
+/* Mejorar contraste para párrafos específicos */
+p.lead {
+  color: #f0f0f0 !important;
+}
+
+p.card-text {
+  color: #e8e8e8 !important;
+}
+
+/* Texto en formularios más claro */
+.contacto-page p {
+  color: #f0f0f0 !important;
+}
+
+.contacto-page .card-body p {
+  color: #f0f0f0 !important;
+}
+
+/* Títulos principales */
+h1, h2, h3, h4, h5, h6 {
+  color: #007B8A !important;
+}
+
+/* Elementos con fondo blanco que deben ser oscuros */
+.bg-white {
+  background-color: #2c2c2c !important;
+}
+
+/* Text utilities override */
+.text-secondary {
+  color: #b0b0b0 !important;
+}
+
+.text-muted {
+  color: #888 !important;
+}
+
+/* Botones outline */
+.btn-outline-primary {
+  color: #007B8A !important;
+  border-color: #007B8A !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007B8A !important;
+  color: #ffffff !important;
+}
+
+/* Asegurar que las imágenes de perfil tengan el borde correcto */
+.rounded-circle {
+  border-color: #007B8A !important;
+}
+
+/* Override de Bootstrap para asegurar consistencia */
+.img-fluid {
+  border: 1px solid #007B8A;
+}
+
+/* Estilos específicos para elementos que pueden aparecer en blanco */
+.lead {
+  color: #b0b0b0 !important;
+}
+
+/* Asegurar que los iconos tengan el color correcto */
+.bi {
+  color: inherit;
+}
+
+/* Footer con colores consistentes */
+footer p {
+  color: #ddd !important;
+}
+
+footer a {
+  color: #007B8A !important;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+}
+
+/* Estilos globales para formularios */
+.form-control {
+  background-color: #333 !important;
+  border: 1px solid #555 !important;
+  color: #ffffff !important;
+}
+
+.form-control:focus {
+  background-color: #444 !important;
+  border-color: #007B8A !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 138, 0.25) !important;
+  color: #ffffff !important;
+}
+
+.form-control::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1;
+}
+
+.form-label {
+  color: #f5f5f5 !important;
+  font-weight: bold;
+}
+
+.form-label i {
+  color: #007B8A !important;
+}
+
+/* Mejorar el contraste en mensajes de validación */
+.invalid-feedback {
+  color: #ff6b6b !important;
+  font-weight: 500;
+}
+
+.valid-feedback {
+  color: #007B8A !important;
+  font-weight: 500;
 }
 
 /* Estilos para alertas personalizadas */
