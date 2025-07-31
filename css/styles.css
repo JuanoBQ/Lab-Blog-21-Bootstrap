@@ -1,108 +1,135 @@
-body{
-    font-family: sans-serif;
+/* Reset y estilos base */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #333;
 }
 
-#home-content{
-    padding: 50px;
+/* Estilos personalizados para la navbar Bootstrap */
+.navbar-brand:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Estilos específicos para nav-links con mayor especificidad */
+.navbar-nav .nav-link {
+  background-color: #ffffff;
+  color: #1e3c72;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f8f9fa;
+  color: #1e3c72;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav .nav-link.active-page {
+  background-color: #ffffff;
+  color: #1e3c72;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link.active-page:hover {
+  background-color: #f8f9fa;
+  color: #1e3c72;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Mejora del header title */
+.bg-primary h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bg-primary p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para páginas */
+#home-content {
+  padding: 50px;
 }
 
 #titulo {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-#icono{
-    width: 80px;
-    height: 80px;
+#icono {
+  width: 80px;
+  height: 80px;
 }
 
-.contenido-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-}
-
-.texto-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.contenido-1 > div {
-    flex: 1;
-}
-
-.jimi{
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.kurt{
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.amp{
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.amplificadores{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-body
+/* Contenido general - páginas internas */
 .contenido {
   display: flex;
-  align-items: flex-start; /* alinea la imagen al inicio del texto */
-  gap: 20px; /* espacio entre texto e imagen */
+  align-items: flex-start;
+  gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
- 
+
 .texto {
-  flex: 1; /* toma el espacio disponible */
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  flex: 1;
 }
 
-header {
-  background-color: #007B8A;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+.contenido-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
 }
 
+.contenido-1 > div {
+  flex: 1;
+}
+
+.texto-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Imágenes */
+.jimi, .kurt, .amp {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.amplificadores {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Layout principal */
 main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 200px);
 }
 
 h2 {
-  color: #007B8A;
+  color: #1e3c72;
 }
 
+/* Página de contacto - Tarjetas de Bootstrap (ya no se usan las clases personalizadas) */
 .info-contacto p {
   margin: 0.5rem 0;
 }
 
+/* Formularios */
 form {
   display: flex;
   flex-direction: column;
@@ -114,8 +141,7 @@ label {
   font-weight: bold;
 }
 
-input,
-textarea {
+input, textarea {
   padding: 0.5rem;
   margin-top: 0.3rem;
   border: 1px solid #ccc;
@@ -128,168 +154,81 @@ button {
   padding: 0.7rem;
   border: none;
   border-radius: 4px;
-  background-color: #007B8A;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #005f6b;
+  background: linear-gradient(135deg, #1a3366 0%, #235288 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
 }
 
-/* Botón flotante de WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background-color: #25D366;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  background-color: #1DA851;
-}
-
-.whatsapp-button .icon {
-  width: 24px;
-  height: 24px;
-  fill: white;
-}
-
-
-nav {
-    background-color: #0f0f0f;
-    position: sticky;
-    top: 0;
-    z-index: 0;
-    padding: 0.5em 0;
-    box-shadow: 0 2px 5px rgba(248, 248, 248, 0.2);
-}
-.nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1em;
-    position: relative;
-
-}
-.nav-left {
-  flex: 1;
- }
-
-.logo{
-    height: 50px;
-    
-}
-
-.nav-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-nav ul.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-    padding: 0;
-    margin: 0%;
-}
-
-nav a {
-    color: beige;
-    text-decoration: none;
-    font-weight: bold;
-    font-size:  1.1em;
-    
-    
-
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: #f67e22;
-}
-.menu a.activo {
-  color: #f5b041; 
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  position: relative;
-  padding-bottom: 10px;
-  transition: color 0.3s ease, font-weight 0.3s ease;
-}
-
-.menu a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0%;
-  background-color: #ca6f1e;
-  transition: width 0.3s ease;
-}
-menu a:hover::after {
-  width: 100%;
-}
-
-
-.menu a.activo {
-  color: #6e2c00;
-  font-weight: 900;
-}
-
-.menu a.activo::after {
-  width: 100%;
-}
-
+/* Footer */
 footer {
-  background-color: #111;       /* Fondo oscuro elegante */
-  color: #ddd;                  /* Texto claro para contraste */
+  background-color: #111;
+  color: #ddd;
   text-align: center;
   padding: 30px 20px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.95rem;
   border-top: 2px solid #444;
 }
- 
+
 footer p {
   margin: 10px 0;
 }
- 
+
 footer strong {
   color: #fff;
 }
- 
+
 footer a {
-  color: #1db954; /* Verde tipo Spotify (rock vibes) */
+  color: #1db954;
   text-decoration: none;
   margin: 0 5px;
   transition: color 0.3s;
 }
- 
+
 footer a:hover {
   color: #fff;
+}
+
+/* Estilos para alertas personalizadas */
+.custom-success-alert {
+  border-left: 4px solid #28a745;
+  border-radius: 8px;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.custom-success-alert .btn-close {
+  font-size: 0.8rem;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Mejora de validación de formularios */
+.form-control.is-valid,
+.form-control.is-invalid {
+  padding-right: calc(1.5em + 0.75rem);
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control:focus {
+  border-color: #1e3c72;
+  box-shadow: 0 0 0 0.2rem rgba(30, 60, 114, 0.25);
 }

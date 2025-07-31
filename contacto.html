@@ -4,64 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header>
-  <h1>Contáctanos</h1>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-            </div>
-            <div class="nav-center">
-                    <ul  class="menu">
-                        <li><a href="index.html" >Inicio</a></li>
-                        <li><a href="quienes-somos.html">Nosotros</a></li>
-                        <li><a href="contacto.html"class = "activo">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <!-- Navbar moderna con Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background: linear-gradient(135deg, #1e3c72 0%, #68d9fc 100%);">
+    <div class="container">
+      <!-- Brand/Logo -->
+      <a class="navbar-brand fw-bold fs-3" href="index.html">
+        <i class="bi bi-music-note-beamed text-white me-2"></i>
+        <span class="text-white">Music Blog</span>
+      </a>
+
+      <!-- Toggle button para móvil -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3 py-2 mx-1 rounded-pill" 
+               href="index.html" style="transition: all 0.3s ease;">
+              <i class="bi bi-house-fill me-1"></i>Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3 py-2 mx-1 rounded-pill" 
+               href="quienes-somos.html" style="transition: all 0.3s ease;">
+              <i class="bi bi-people-fill me-1"></i>Nosotros
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3 py-2 mx-1 rounded-pill active-page" 
+               href="contacto.html" style="transition: all 0.3s ease;">
+              <i class="bi bi-envelope-fill me-1"></i>Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Header title section -->
+  <div class="bg-primary text-white text-center py-5" style="background-color: rgb(0, 0, 0);">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-2">
+        <i class="bi bi-telephone-fill me-3"></i>Contáctanos
+      </h1>
+      <p class="lead mb-0">Estamos aquí para ayudarte y escuchar tus ideas</p>
+    </div>
+  </div>
 </header>
 
-<main>
-  <section class="info-contacto">
-    <h2>Información de contacto</h2>
-    <p><strong>Nombre:</strong> Laura Calderón Papitas</p>
-    <p><strong>Teléfono:</strong> +57 312 345 6789</p>
-    <p><strong>Correo:</strong> lauraCal23@gmail.com</p>
+<main class="container py-5">
+  <section class="info-contacto mb-5">
+    <div class="text-center mb-4">
+      <h2 class="display-6 fw-bold" style="color: #1e3c72;">Información de contacto</h2>
+      <p class="lead text-muted">Conoce a nuestro equipo</p>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5 col-md-6">
+        <div class="card h-100 shadow-sm border-0" style="background-color: #f8f9fa85;">
+          <div class="card-body text-center p-4">
+            <div class="mb-4">
+              <img src="img/mujer-muestra.png" alt="Laura Calderón" class="rounded-circle border border-3 border-white shadow" style="width: 120px; height: 120px; object-fit: cover;">
+            </div>
+            <h4 class="card-title fw-bold" style="color: #1e3c72;">Laura Calderón Papitas</h4>
+            <div class="mt-3">
+              <p class="card-text mb-2">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <strong>Teléfono:</strong> +57 312 345 6789
+              </p>
+              <p class="card-text mb-0">
+                <i class="bi bi-envelope-fill text-danger me-2"></i>
+                <strong>Correo:</strong> lauraCal23@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <p><strong>Nombre:</strong> Carlos Gómez Zánches</p>
-    <p><strong>Teléfono:</strong> +57 310 987 6543</p>
-    <p><strong>Correo:</strong> carlosgoza52@hotmail.com</p>
+      <div class="col-lg-5 col-md-6">
+        <div class="card h-100 shadow-sm border-0" style="background-color: #f8f9fa;">
+          <div class="card-body text-center p-4">
+            <div class="mb-4">
+              <img src="img/hombre-muestra.png" alt="Carlos Gómez" class="rounded-circle border border-3 border-white shadow" style="width: 120px; height: 120px; object-fit: cover;">
+            </div>
+            <h4 class="card-title fw-bold" style="color: #1e3c72;">Carlos Gómez Zánches</h4>
+            <div class="mt-3">
+              <p class="card-text mb-2">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <strong>Teléfono:</strong> +57 310 987 6543
+              </p>
+              <p class="card-text mb-0">
+                <i class="bi bi-envelope-fill text-danger me-2"></i>
+                <strong>Correo:</strong> carlosgoza52@hotmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="formulario-contacto">
-    <h2>¿También te gustaría aportar a nuestro blog?<br>¡Envíanos un mensaje!</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
-
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" placeholder="Introduce-tu@correo.com" required>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="¡Escribe tu mensaje aquí!" required></textarea>
-
-      <button type="submit">Enviar mensaje</button>
-    </form>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow border-0" style="background-color: #f5f5f5;">
+          <div class="card-body p-5">
+            <div class="text-center mb-4">
+              <h2 class="card-title display-6 fw-bold" style="color: #1e3c72;">¿También te gustaría aportar a nuestro blog?</h2>
+              <p class="lead text-muted">¡Envíanos un mensaje!</p>
+            </div>
+            
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label fw-bold">
+                    <i class="bi bi-person-fill text-primary me-2"></i>Nombre
+                  </label>
+                  <input type="text" class="form-control form-control-lg" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                  <div class="invalid-feedback">
+                    Por favor, introduce tu nombre.
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="correo" class="form-label fw-bold">
+                    <i class="bi bi-envelope-fill text-danger me-2"></i>Correo electrónico
+                  </label>
+                  <input type="email" class="form-control form-control-lg" id="correo" name="correo" placeholder="tu@correo.com" required>
+                  <div class="invalid-feedback">
+                    Por favor, introduce un correo válido.
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="mensaje" class="form-label fw-bold">
+                    <i class="bi bi-chat-text-fill text-info me-2"></i>Mensaje
+                  </label>
+                  <textarea class="form-control form-control-lg" id="mensaje" name="mensaje" rows="6" placeholder="¡Escribe tu mensaje aquí!" required></textarea>
+                  <div class="invalid-feedback">
+                    Por favor, escribe tu mensaje.
+                  </div>
+                </div>
+                
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-lg px-5 py-3 fw-bold text-white" 
+                          style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border: none; transition: all 0.3s ease;">
+                    <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
 <a
   href="https://wa.me/5712345678"
-  class="whatsapp-button"
+  class="btn btn-success position-fixed shadow-lg"
+  style="bottom: 2rem; right: 2rem; border-radius: 50px; z-index: 1000; padding: 1rem 1.5rem;"
   target="_blank"
   rel="noopener noreferrer"
+  data-bs-toggle="tooltip"
+  data-bs-placement="left"
+  title="Escríbenos por WhatsApp"
 >
-  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" class="icon">
-  <span>Escríbenos</span>
+  <i class="bi bi-whatsapp fs-4 me-2"></i>
+  <span class="fw-bold">Escríbenos</span>
 </a>
 
 <!-- Footer -->
@@ -71,6 +195,9 @@
         <p><strong>Siguenos en: </strong> Instagram | X</p>
     </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
 
