@@ -1,227 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-    <title>Guitar Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guitar Blog</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-black text-light">
 
-    <nav>
-        <div class="nav-container">
-            <div class="nav-left">
-                <!-- Puedes agregar logo o elementos aquí -->
+  <!-- Header / Navbar -->
+  <header class="py-3">
+    <nav class="navbar navbar-expand-lg container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img src="./img/favicon.ico" alt="Logo" width="48" height="48" class="bg-white rounded p-1" />
+        <h1 class="m-0 text-uppercase fw-bold" style="font-family: 'Bebas Neue', sans-serif;">Guitar Blog</h1>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             </div>
-            <div class="nav-center">
-                <ul class="menu">
-                    <li><a href="index.html" class="activo">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
     </nav>
+  </header>
 
-    <main id="home-content">
-        <section class="titulos">
-            <div id="titulo">
-                <img
-                    id="icono"
-                    src="./img/favicon.ico"
-                    alt="Guitarra eléctrica sobre amplificador"
-                    width="64"
-                    height="64"
-                />
-                <h1>Bienvenido a Guitar Blog</h1>
-            </div>
-            <p>
-                Explora el mundo del rock, los sonidos clásicos y modernos, y todo lo que necesitas saber
-                sobre guitarras, pedales y amplificadores.
-            </p>
-        </section>
 
-        <section class="destacados">
-            <h2>Destacados de la Semana</h2>
+  <main class="container" style="width: 150%;">
 
-            <article class="contenido-1">
-                <div class="texto-1">
-                    <h3>La Stratocaster: Historia y evolución</h3>
-                    <p>
-                        Desde Hendrix hasta John Mayer, descubre cómo esta guitarra ha definido generaciones.
-                        La Fender Stratocaster no es solo una guitarra: es un ícono cultural. Nacida en 1954 de
-                        la mente visionaria de Leo Fender, la Stratocaster revolucionó el diseño de guitarras
-                        eléctricas con su contorno ergonómico, su doble cutaway y sus tres pastillas de bobina
-                        simple. Desde entonces, ha sido sinónimo de versatilidad sonora, innovación y actitud.
-                        Durante los años 60 y 70, la Stratocaster fue adoptada por artistas que estaban
-                        redefiniendo la música. Jimi Hendrix la transformó en un arma psicodélica en Woodstock,
-                        tocándola incluso al revés. Eric Clapton la inmortalizó con su tono suave y melódico
-                        en los años 70, y David Gilmour usó una Strat para pintar paisajes sonoros en álbumes
-                        como The Dark Side of the Moon. En los 80, guitarristas como Mark Knopfler y Stevie Ray
-                        Vaughan demostraron su enorme rango dinámico, desde el country delicado hasta el blues
-                        abrasador. 🤘
-                    </p>
-                    <a href="articulos/stratocaster.html" aria-label="Leer más sobre La Stratocaster">Leer más</a>
-                </div>
-                <div>
-                    <img
-                        class="jimi"
-                        src="https://es.rollingstone.com/wp-content/uploads/2023/09/Recordando-a-Jimi-Hendrix.jpg"
-                        alt="Jimi Hendrix tocando la guitarra"
-                        loading="lazy"
-                    />
-                </div>
-            </article>
 
-            <article class="contenido-1">
-                <div>
-                    <img
-                        class="kurt"
-                        src="https://i.pinimg.com/564x/67/83/de/6783deeb08a3872e4316497bbc4b88e4.jpg"
-                        alt="Pedales de guitarra"
-                        loading="lazy"
-                    />
-                </div>
-                <div class="texto-1">
-                    <h3>Top 5 pedales para tonos legendarios</h3>
-                    <div class="top-pedales">
-                        <p>
-                            Distorsión, delay, reverb... Si alguna vez te preguntaste cómo lograr ese sonido que hace temblar estadios o derretir almas en un solo, este es tu mapa del tesoro. Aquí van los cinco pedales imprescindibles que han definido el sonido del rock, el blues y más allá:
-                        </p>
+    <section class="text-center mb-5">
+      <img src="./img/favicon.ico" alt="Logo" width="48" height="48" class="bg-white rounded p-1" />
+      <h2 class="fw-bold text-uppercase mb-3" style="font-family: 'Bebas Neue', sans-serif;">Bienvenido a Guitar Blog</h2>
+      <p class="lead text-secondary">Explora el mundo del rock, sonidos clásicos y modernos, y todo sobre guitarras, pedales y amplificadores.</p>
+    </section>
 
-                        <ol>
-                            <li>
-                                <strong>Boss DS-1 Distortion – El rugido de los grandes</strong><br />
-                                Usado por Kurt Cobain, Joe Satriani y Steve Vai, el DS-1 es una leyenda naranja. Su distorsión agresiva pero clara te da ese tono crudo y directo que puede ir desde punk hasta shred, sin perder definición. Es simple, asequible y brutalmente efectivo.<br />
-                                🟧 <em>Ideal para:</em> rock clásico, grunge, hard rock<br />
-                                🎸 <em>Bonus:</em> colócalo antes del overdrive para más versatilidad.
-                            </li>
-                            <br />
 
-                            <li>
-                                <strong>Ibanez Tube Screamer TS808 / TS9 – El santo grial del overdrive</strong><br />
-                                Este pedal verde es el secreto detrás del tono cálido y cremoso de Stevie Ray Vaughan. No es una distorsión, es una empujadita amorosa que hace brillar tu ampli a válvulas. Perfecto para blues, rock y solos con alma.<br />
-                                🟩 <em>Ideal para:</em> blues, rock vintage, solos expresivos<br />
-                                🎸 <em>Tip:</em> excelente como booster delante de un ampli ya saturado.
-                            </li>
-                            <br />
+    <section id="ozzy-tribute" class="mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                  <h3 class="fw-bold">🕯️ En memoria: Ozzy Osbourne</h3>
+      <p>El legendario “Príncipe de las Tinieblas” falleció el 22 de julio de 2025 a los 76 años, rodeado de su familia y dejando un legado imborrable en el heavy metal.</p>
+      <p>Con Black Sabbath dio su último adiós el 5 de julio en Birmingham, en el concierto “Back to the Beginning”, donde se reunió con la formación original frente a más de 40 000 fans. Miles de seguidores llenaron las calles de su ciudad natal en su funeral, que se convirtió en una celebración de su legado.</p>
+      <p class="fst-italic text-light-emphasis">Su guitarrista de siempre, Zakk Wylde, reveló que su último mensaje fue un emotivo agradecimiento: “Thanks for everything… I love you, buddy.”</p>
 
-                            <li>
-                                <strong>Electro-Harmonix Big Muff Pi – Fuzz en estéreo épico</strong><br />
-                                Un clásico del fuzz, tan salvaje como hipnótico. De David Gilmour en “Comfortably Numb” a The Smashing Pumpkins, el Big Muff es ideal para crear muros sónicos, texturas densas y tonos espaciales que flotan por el éter.<br />
-                                🟥 <em>Ideal para:</em> psicodelia, shoegaze, rock alternativo<br />
-                                🎸 <em>Tip:</em> combínalo con delay y reverb para un viaje lisérgico.
-                            </li>
-                            <br />
+        </div>
+    <div class="col-md-6">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIeEekDhjsn8R9kA15ZchhNYz5lM355U5Ce049vHODn5YjwAxdbEsfeF5gM0-js2hBH9bErkeCqQRpFWF9vSzj-A" alt="Ozzy" class="img-fluid rounded shadow-lg" loading="lazy">
 
-                            <li>
-                                <strong>MXR Carbon Copy Analog Delay – El eco de la nostalgia</strong><br />
-                                Este delay analógico es todo lo que necesitas si amas los ecos oscuros y cálidos. Desde solos estilo Gilmour hasta riffs ambientales, el Carbon Copy da carácter sin sonar digital. Además, su modulación integrada lo hace aún más especial.<br />
-                                🟦 <em>Ideal para:</em> solos épicos, atmósferas envolventes, loops<br />
-                                🎸 <em>Tip:</em> úsalo después de la distorsión para mayor claridad.
-                            </li>
-                            <br />
-                        </ol>
-                    </div>
+    </div>
+        </div>
+        
+    </section>
 
-                    <a href="articulos/pedales.html" aria-label="Ver lista completa de pedales">Ver lista</a>
-                </div>
-            </article>
 
-            <article class="contenido-1">
-                <div class="texto-1">
-                    <h3>¿Tube o digital? Guía de amplificadores</h3>
-                    <p>
-                        ¿Buscas esa calidez crujiente que hace vibrar el alma o la flexibilidad de tener miles de sonidos al alcance de un botón? Aquí desglosamos lo mejor de ambos mundos para que elijas el que más se alinea con tu estilo, tu presupuesto… y tu espalda.
-                    </p>
+    <article class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h4 class="fw-bold">🎸 La Stratocaster: Historia y evolución</h4>
+        <p>Desde Hendrix hasta John Mayer, esta guitarra ha sido el lienzo de innumerables estilos musicales. Su diseño ergonómico, su sistema de trémolo y su versatilidad tonal la convirtieron en la favorita de los innovadores.</p>
+        <div class="fender bg-dark border-start ps-4 py-2 mb-3 rounded">
+          <p>Con tres pastillas de bobina simple y un selector de cinco posiciones, la Stratocaster permite explorar desde el twang limpio del country hasta la distorsión saturada del rock clásico.</p>
+        </div>
+        <p>Hoy en día, sigue siendo uno de los modelos más vendidos, tanto en versiones vintage como modernas. Fender, Squier y luthiers boutique han reinterpretado el modelo sin perder su esencia.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://es.rollingstone.com/wp-content/uploads/2023/09/Recordando-a-Jimi-Hendrix.jpg" alt="Hendrix" class="img-fluid rounded shadow-lg" loading="lazy">
+      </div>
+    </article>
 
-                    <p><strong>📻 Amplificadores de válvulas (tube): el alma vintage</strong></p>
 
-                    <p>
-                        Los amplis de válvulas son los favoritos de los puristas. ¿Por qué? Porque ofrecen una calidez, respuesta dinámica y saturación natural que simplemente se siente viva. Desde los riffs rugientes de Jimmy Page hasta los limpios cristalinos de David Gilmour, las válvulas han sido el motor detrás de incontables discos icónicos.
-                    </p>
+    <article class="row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <h4 class="fw-bold">🎛️ Top 5 pedales para tonos legendarios</h4>
+        <p>Distorsión, delay, reverb... El tono perfecto no solo está en tus dedos: también está bajo tus pies.</p>
+        <ol class="ps-3">
+          <li><strong>Boss DS-1:</strong> Distorsión económica y potente, usada por Cobain y Satriani.</li>
+          <li><strong>Tube Screamer:</strong> Sonido overdrive cálido, ideal para blues y solos.</li>
+          <li><strong>Big Muff Pi:</strong> Fuzz icónico de Smashing Pumpkins, Gilmour y Jack White.</li>
+          <li><strong>MXR Carbon Copy:</strong> Delay analógico de sonido profundo, ideal para riffs atmosféricos.</li>
+          <li><strong>Electro-Harmonix Holy Grail:</strong> Reverb clásica para añadir dimensión sin complicaciones.</li>
+        </ol>
+        <p>La combinación de pedales adecuada puede definir el carácter de tu sonido en vivo y en estudio. Experimentar es la clave.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="https://i.pinimg.com/564x/67/83/de/6783deeb08a3872e4316497bbc4b88e4.jpg" alt="Pedales" class="img-fluid rounded shadow-lg" loading="lazy">
+      </div>
+    </article>
 
-                    <p><strong>Ventajas:</strong></p>
-                    <ul>
-                        <li>Sonido orgánico, rico y tridimensional.</li>
-                        <li>Responden mejor a la dinámica de la interpretación.</li>
-                        <li>Ideal para blues, rock clásico, jazz y géneros donde el tone is king.</li>
-                    </ul>
 
-                    <p><strong>Desventajas:</strong></p>
-                    <ul>
-                        <li>Pesados y frágiles (sí, hay que cargar válvulas).</li>
-                        <li>Mantenimiento frecuente.</li>
-                        <li>Caros (tanto al comprar como al reparar).</li>
-                    </ul>
+<article class="row align-items-start mb-5">
+      <div class="col-lg-6">
+        <h4 class="fw-bold">🔊 ¿Tube o Digital? Guía de Amplificadores</h4>
+        <p><span class="text-warning">📻 Válvulas:</span> Sonido orgánico, dinámica sensible y armónicos ricos. Amados por puristas del tono.</p>
+        <p><span class="text-info">🎛️ Digitales:</span> Simulan decenas de amplis y efectos. Livianos y versátiles para giras y grabación.</p>
+        <p class="fw-semibold">¿Cuál elegir? Depende de tu necesidad: autenticidad vs. practicidad. Muchos guitarristas hoy combinan ambos mundos con amplificadores híbridos.</p>
+        <p>Modelos como el Kemper, Line 6 Helix o el Boss Katana ofrecen prestaciones que hace años eran impensables, sin perder el alma del sonido tradicional.</p>
+      </div>
+      <div class="col-lg-6 d-flex flex-wrap gap-3 mt-3 mt-lg-0">
+        <img src="https://www.thomann.de/blog/app/uploads/sites/5/2016/08/5-amplificadores-perfectos-para-guitarra-acustica.jpg" class="img-fluid rounded shadow-lg" alt="Amplificador acústico" loading="lazy" />
+        <img src="https://imagenes.elpais.com/resizer/v2/DQBVI5KCRWLCA5TLQYSIUCJGHI.jpg?width=1200" class="img-fluid rounded shadow-lg" alt="Amplificador moderno" loading="lazy" />
+        <img src="https://farm1.static.flickr.com/25/37030329_92fe3fa4f8.jpg" class="img-fluid rounded shadow-lg" alt="Amplificador vintage" loading="lazy" />
+      </div>
+    </article>
 
-                    <p><strong>🎛️ Amplificadores digitales y modeladores: el futuro (y el presente)</strong></p>
+  </main>
 
-                    <p>
-                        Desde el Helix de Line 6 hasta el famoso Kemper o el Quad Cortex, los modeladores han evolucionado a tal punto que hoy en día puedes tocar en un estadio o grabar un disco entero sin mover una sola válvula.
-                    </p>
-                    <p>
-                        Estos amplis y pedaleras emulan una amplia gama de sonidos, desde Marshalls incendiarios hasta Fenders limpios, todo en una sola unidad y con salida directa a consola.
-                    </p>
 
-                    <p><strong>Ventajas:</strong></p>
-                    <ul>
-                        <li>Versatilidad extrema: un solo aparato, cientos de sonidos.</li>
-                        <li>Livianos y fáciles de transportar.</li>
-                        <li>Perfectos para grabar en casa, tocar en vivo con auriculares o llevar tu rig en una mochila.</li>
-                    </ul>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p><strong>Autores:</strong> Diego Candamil, Carolina López, Karen Ulcue, Juan José Bravo, Samuel López</p>
+      <p><strong>Contacto:</strong> diego@falsocorreo.com</p>
+      <p><strong>Síguenos:</strong> Instagram | X</p>
+    </div>
+  </footer>
 
-                    <p><strong>Desventajas:</strong></p>
-                    <ul>
-                        <li>Algunos oídos exigentes aún notan la diferencia.</li>
-                        <li>Puede sentirse menos “reactivo” o “vivo” al tocar (aunque cada vez menos).</li>
-                    </ul>
 
-                    <p><strong>🎸 ¿Entonces, cuál elegir?</strong></p>
-                    <ul>
-                        <li>Si eres de los que buscan “ese tono” con alma y estás dispuesto a cargar un bicho de 25 kg por amor al arte: válvulas.</li>
-                        <li>Si te gusta experimentar, grabar en casa, tocar muchos géneros o no quieres hipotecar la casa por un stack vintage: digital.</li>
-                    </ul>
-
-                    <p><strong>¿Mi consejo?</strong> ¡Prueba ambos! No se trata de religión, sino de inspiración.</p>
-
-                    <a href="articulos/amplificadores.html" aria-label="Comparar amplificadores tube y digitales">Comparar</a>
-                </div>
-
-                <div class="amplificadores">
-                    <img
-                        class="amp"
-                        src="https://www.thomann.de/blog/app/uploads/sites/5/2016/08/5-amplificadores-perfectos-para-guitarra-acustica.jpg"
-                        alt="Amplificadores para guitarra acústica"
-                        loading="lazy"
-                    />
-
-                    <img
-                        class="amp"
-                        src="https://imagenes.elpais.com/resizer/v2/DQBVI5KCRWLCA5TLQYSIUCJGHI.jpg?auth=944ce0f9fd06df908175bee739e5fb31c68430794751b6796392551bb4785133&width=1200"
-                        alt="Amplificador moderno"
-                        loading="lazy"
-                    />
-
-                    <img
-                        class="amp"
-                        src="https://farm1.static.flickr.com/25/37030329_92fe3fa4f8.jpg"
-                        alt="Amplificador vintage"
-                        loading="lazy"
-                    />
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <script src="./main.js"></script>
-    <!-- Footer -->
-    <footer>
-        <p><strong>Autores:</strong> Diego Candamil, Carolina López, Karen Ulcue, Juan José Bravo, Samuel López</p>
-        <p><strong>Encuentranos en: </strong> diego@falsocorreo.com</p>
-        <p><strong>Siguenos en: </strong> Instagram | X</p>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
